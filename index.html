@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otterly.AI Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <span class="logo-icon">🦦</span>
+                    <span class="logo-text">Otterly.<span class="ai">AI</span></span>
+                </div>
+                <nav class="breadcrumb">
+                    <span class="breadcrumb-item">🏠</span>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-item">Monitoring</span>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-item">Reports</span>
+                </nav>
+            </div>
+            <div class="header-right">
+                <button class="sign-out-btn">
+                    <span class="power-icon">⚡</span>
+                    Sign Out
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <ul class="sidebar-menu">
+                    <li class="menu-item">
+                        <span class="menu-icon">🚀</span>
+                        Getting started
+                    </li>
+                    <li class="menu-item">
+                        <span class="menu-icon">📊</span>
+                        AI Keyword Research
+                    </li>
+                    <li class="menu-item active">
+                        <span class="menu-icon">🔍</span>
+                        AI Search Monitoring
+                        <ul class="submenu">
+                            <li class="submenu-item active" data-section="search-prompt">
+                                • Search Prompt Monitoring
+                            </li>
+                            <li class="submenu-item" data-section="analytics">
+                                • Analytics Dashboard
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <span class="menu-icon">📈</span>
+                        Brand Ranking
+                    </li>
+                    <li class="menu-item">
+                        <span class="menu-icon">🔗</span>
+                        Links Analytics
+                    </li>
+                </ul>
+                
+                <div class="sidebar-bottom">
+                    <button class="buy-prompts-btn">
+                        BUY SEARCH PROMPTS 🎯
+                    </button>
+                </div>
+            </aside>
+
+            <!-- Content Area -->
+            <main class="content-area">
+                <!-- Search Prompt Monitoring Section -->
+                <section id="search-prompt-section" class="content-section active">
+                    <div class="section-header">
+                        <h1 class="section-title">Search Prompt Monitoring</h1>
+                        <div class="section-actions">
+                            <button class="btn btn-success">ADD SEARCH PROMPT</button>
+                            <button class="btn btn-info">📥 IMPORT</button>
+                            <button class="btn btn-primary">📤 EXPORT</button>
+                            <button class="btn btn-secondary">🔄</button>
+                        </div>
+                    </div>
+
+                    <div class="section-description">
+                        <p>Easily track and analyze your search prompts. See key KPIs per search prompt for Google AI Overviews, ChatGPT, and Perplexity AI in one central view. Need help? Contact us or <a href="#" class="link">view this video here.</a></p>
+                    </div>
+
+                    <div class="filters">
+                        <div class="filter-group">
+                            <label>Countries (Number of search prompts):</label>
+                            <select class="select-input">
+                                <option>United States (1)</option>
+                                <option>France (0)</option>
+                                <option>United Kingdom (0)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="brand-status">
+                        <p>No brand/domain selected. <a href="#" class="link">[customize]</a></p>
+                    </div>
+
+                    <div class="data-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox"></th>
+                                    <th>1 Search Prompt (United States) 💰</th>
+                                    <th>Intent Vol ℹ️</th>
+                                    <th>Total Brands ℹ️</th>
+                                    <th>Total Links ℹ️</th>
+                                    <th>AI Overviews 🔥</th>
+                                    <th>Total Brand ℹ️</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>
+                                        <div class="prompt-cell">
+                                            <span class="prompt-text">Orange</span>
+                                        </div>
+                                    </td>
+                                    <td>40.5K 📈</td>
+                                    <td>0</td>
+                                    <td class="chatgpt-column">7</td>
+                                    <td><span class="no-badge">NO</span></td>
+                                    <td class="google-column">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Analytics Dashboard Section -->
+                <section id="analytics-section" class="content-section">
+                    <div class="section-header">
+                        <h1 class="section-title">Analytics Dashboard</h1>
+                        <div class="section-actions">
+                            <button class="btn btn-primary">📤 EXPORT</button>
+                            <button class="btn btn-secondary">🔄</button>
+                        </div>
+                    </div>
+
+                    <div class="section-description">
+                        <p>Instantly view key KPIs across all AI search platforms. Discover your brand's visibility and performance at a glance. Need help? Contact us or <a href="#" class="link">view this video here.</a></p>
+                    </div>
+
+                    <div class="analytics-stats">
+                        <p><strong>1 search prompts</strong> in this report for United States.</p>
+                    </div>
+
+                    <div class="filters">
+                        <div class="filter-group">
+                            <label>Countries (Number of search prompts):</label>
+                            <select class="select-input">
+                                <option>United States (1)</option>
+                                <option>France (0)</option>
+                                <option>United Kingdom (0)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="brand-status">
+                        <p>No brand/domain selected. <a href="#" class="link">[customize]</a></p>
+                    </div>
+
+                    <div class="platform-cards">
+                        <div class="platform-card chatgpt">
+                            <h3 class="platform-name">ChatGPT</h3>
+                            <div class="metric">
+                                <span class="metric-label">Prompt Results</span>
+                                <span class="metric-value">1</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">AI-Overviews Visible ℹ️</span>
+                                <span class="metric-value">0 of 1 (0%)</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Your Brand Visibility</span>
+                                <span class="metric-value">-% (0)</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Your Avg. Brand Position</span>
+                                <span class="metric-value">#0</span>
+                            </div>
+                        </div>
+
+                        <div class="platform-card google-aio">
+                            <h3 class="platform-name">Google AIO</h3>
+                            <div class="metric">
+                                <span class="metric-label">Prompt Results</span>
+                                <span class="metric-value">0 of 1 (0%)</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">AI-Overviews Visible ℹ️</span>
+                                <span class="metric-value">-% (0)</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Your Brand Visibility ℹ️</span>
+                                <span class="metric-value">Your Brand Visibility</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Your Avg. Brand Position</span>
+                                <span class="metric-value">#0</span>
+                            </div>
+                        </div>
+
+                        <div class="platform-card perplexity">
+                            <h3 class="platform-name">PerplexityAI</h3>
+                            <div class="metric">
+                                <span class="metric-label">Prompt Results</span>
+                                <span class="metric-value">1</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Your Brand Visibility</span>
+                                <span class="metric-value">0% (0)</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Your Avg. Brand Position</span>
+                                <span class="metric-value">#0</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
